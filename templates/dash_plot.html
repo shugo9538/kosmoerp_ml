@@ -1,0 +1,15 @@
+{%load plotly_dash%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plotly in Django</title>
+</head>
+<body>
+	<main>
+		<!-- Connect Plotly Dash with Django by ID mentioned in dash_app_code.py-->
+		<div class="{% plotly_class name='dash_integration_id'%}">
+			{% plotly_app name="dash_integration_id" ratio=0.5 %}
+		</div>
+	</main>
+</body>
+</html>
